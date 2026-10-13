@@ -131,3 +131,14 @@ btnClear.addEventListener('click', clearLogs);
 
 // Initial render
 renderTable();
+
+//connecting to Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCOmKOgqb13rNOfz1rigWyYXiGwBnc0hkk",
+  authDomain: "attendance-18061.firebaseapp.com",
+  projectId: "attendance-18061",
+  storageBucket: "attendance-18061.firebasestorage.app",
+  messagingSenderId: "613105098491",
+  appId: "1:613105098491:web:12074ed2f876c380ea1a5e",
+  measurementId: "G-0PT75GJFZM"
+};
