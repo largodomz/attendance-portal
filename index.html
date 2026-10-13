@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-placeholder">IS</div>
+            <div class="header-text">
+                <h1>International School</h1>
+                <p>Employee Attendance Portal</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="clock-section">
+                <div id="liveClock" class="clock">00:00:00</div>
+                <div id="liveDate" class="date">Loading date...</div>
+            </section>
+
+            <section class="form-section">
+                <div class="input-group">
+                    <label for="empId">Employee ID</label>
+                    <input type="text" id="empId" placeholder="e.g., EMP-1042" autocomplete="off" required>
+                </div>
+                <div class="input-group">
+                    <label for="empName">Full Name</label>
+                    <input type="text" id="empName" placeholder="e.g., Jane Doe" autocomplete="off" required>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="btnTimeIn" class="btn btn-primary">Time In</button>
+                    <button id="btnTimeOut" class="btn btn-secondary">Time Out</button>
+                </div>
+                <div id="statusMessage" class="status-message"></div>
+            </section>
+
+            <section class="log-section">
+                <h2>Today's Activity Log</h2>
+                <div class="table-container">
+                    <table id="logTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="logBody">
+                            <!-- Logs will be injected here -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="admin-actions">
+                    <button id="btnExport" class="btn btn-outline">Export Logs to .txt</button>
+                    <button id="btnClear" class="btn btn-danger">Clear Logs</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
